@@ -1,0 +1,32 @@
+.box{
+    position: relative;
+    width: 300px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+    border: transparent solid 150px;
+    border-bottom: red solid 150px;
+    box-sizing: border-box;
+    margin: 100px;
+}
+
+.box::after{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: transparent solid 250px;
+    border-bottom: aqua solid 250px;
+    box-sizing: border-box;
+    top: -250px;
+    left: -250px;
+    z-index: -1;
+}
+
+// @media  (max-width: 500px) {
+
+//     .box{
+//         background-color: aqua;
+//     }
+    
+// }
